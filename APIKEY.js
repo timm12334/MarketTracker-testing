@@ -1,3 +1,0 @@
-exports.APIKEY = function (){
-    return 
-}
