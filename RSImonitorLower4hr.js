@@ -73,7 +73,7 @@ function RSIcomparison(){
             console.log("RSI/Price bottom divergence ")
             console.log("Current RSI", RSI[168],"Lower Price ",newdata.c[168],"Lowest RSI ",min)
             console.log(' ')
-            report = {t:'1-Hr Bottom divergence ',min,r: RSI[168],p:newdata.c[168]}
+            report = {t:'4-Hr Bottom divergence ',min,r: RSI[168],p:newdata.c[168]}
             return report
         }
         else{

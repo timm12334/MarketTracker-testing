@@ -78,7 +78,7 @@ function RSIcomparison(){
             // console.log("RSI/Price Top divergence ")
             // console.log("Current RSI", RSI[168],"Higher Price ",newdata.c[168],"Highest RSI ",max)
             // console.log(' ')
-            report = {t:'1-Hr Top divergence ',max,r: RSI[168],p:newdata.c[168]}
+            report = {t:'4-Hr Top divergence ',max,r: RSI[168],p:newdata.c[168]}
             // console.log(report,'r')
             return report
         }
