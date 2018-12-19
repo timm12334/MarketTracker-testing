@@ -23,6 +23,7 @@ sgMail.setApiKey('');
 setInterval(function(){console.log(exec())}, 3000);
 async function exec(){
     currenttime= Math.floor(new Date().getTime()/1000)
+    console.log('start')
     // for(t=40;t>=0;t--){
         // console.log(currenttime)
         // currenttime= 1513555200-t*3600
@@ -45,8 +46,8 @@ async function exec(){
 function SendMailTopDivergence(report){
     console.log('sending')
     const msg = {
-        to: [''],
-        from: '',
+        to: ['timlai@tokenite.co'],
+        from: 'hsinyang@bu.edu',
         subject: report.t,
         text: 'what!!',
         html: '<strong>'+"Top Divergence- Sell Short"+"<br>"+'Highest RSI: '+ report.max.r.toFixed(3)+' Price: '+report.max.p+'<br>'+'Current RSI: '+report.r.toFixed(3)+' Price '+report.p+'</strong>',
