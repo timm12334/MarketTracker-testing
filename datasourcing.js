@@ -14,7 +14,7 @@ const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(key);
 var schedule = require('node-schedule');
 
-schedule.scheduleJob('0 10 * * 1',function(){
+schedule.scheduleJob('0 17 * * 1',function(){
     exec()
 })
 
